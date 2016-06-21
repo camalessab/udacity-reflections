@@ -1,0 +1,43 @@
+1. How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+It helped me not to go through a manual comparison line by line.
+I could see at a glance only the modified lines, so I had less lines to compare.
+
+2. How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+For example, if I develop a small (a file) yet complex software program it will
+be efficient to have easy access to the entire history of the file. The versions
+should reflect the natural evolution of the program. So viewing this evolution
+will help me/others in easily understanding the project.
+One more advantage is that I can start working on a new design/feature, and if
+I don't want to consider it anymore, I can go back to a previous version of the
+file.
+
+3. What do you think are the pros and cons of manually choosing when to create a
+ commit, like you do in Git, vs having versions automatically saved, like Google
+ Docs does?
+ Pros:
+ The commit will reflect a logical change
+ Increase the understanding of the project
+ Able to revert to an commit which reflects a stable version
+ Cons:
+ Depends on the users ability to split changes into commits
+
+4. Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+That's because Git is designed primarily for developers, and in a program it is
+relevant to track across files, since they are related. You will get fewer commits,
+and a good picture of the impact of the commit.
+
+5. How can you use the commands git log and git diff to view the history of files?
+The 'git log' gives you a history of the commits. You can see the commit id, author,
+date, and a message.
+The 'git diff' it is used to see the differences between one commit and another.
+
+6. How might using version control make you more confident to make changes that
+could break something?
+Knowing that I can checkout to a previous commit if a recent commit break sth
+gives me more confidence to make changes.
+
+7. Now that you have your workspace set up, what do you want to try using Git for?
+I will checkout different commits on asteroids repository
