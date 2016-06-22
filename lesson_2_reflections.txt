@@ -3,10 +3,11 @@ It created .git folder which is a meta data needed for keeping track of the file
 
 2. How is the staging area different from the working directory and the repository?
 What value do you think it offers?
-The staging area is a logical group of files.
-It is different from the working directory because it contains only a part of
-the files/directories in the working directory. The items that can go in the
-staging area are the ones that have been modified since the last commit.
-It is also different from the repository because the staging are cannot keep track
+The staging area is different from the working directory because not all the files
+or directories from the working directory goes to the staging area. It stores
+information about what will go into the next commit. The users decide which
+modified files/dir to stage.
+It is also different from the repository because the staging area cannot keep track
 of the entire history of the files, but only since the last commit.
-The staging area is useful when deciding which files/directories to be in a commit.
+The staging area is useful when deciding which modified files/directories to be
+in the next commit.
