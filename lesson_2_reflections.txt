@@ -11,3 +11,33 @@ It is also different from the repository because the staging area cannot keep tr
 of the entire history of the files, but only since the last commit.
 The staging area is useful when deciding which modified files/directories to be
 in the next commit.
+
+3. How can you use the staging area to make sure you have one commit per logical change?
+In order to have one commit per logical case, I can stage only the files/dir
+relevant. But also from a file I can stage only a part of it.
+
+4. What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+Branches would be helpful when developing a new feature, or fixing a bug.
+It would help in keeping a clean version (usually the master branch) so the impact
+of breaking a stable version is lower.
+
+5. How do the diagrams help you visualize the branch structure?
+The diagrams could help in understanding the development flow.
+
+6. What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+The result of merging two branches together is to combine the changes made on both.
+It is created a new commit in the checkout branch with the modified files in the
+other branch. Therefore in the diagram is represented as a new commit that has two
+parents and in the log is represented based on time.
+
+7. What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+The manual merging happens when Git finds that the same lines are modified in both
+branches. It is a good thing to let the users to decide which change to be in the
+merged version.
+Automatic merging is also good, because it saves time and is efficient in most cases.
+But what if someone change something in lines 10-13 and another person set an opposite
+thing in line 18-20? In this case it will not be a conflict, but having both in the
+final version can cause undesired results.
