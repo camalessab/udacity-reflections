@@ -1,4 +1,44 @@
 1. When would you want to use a remote repository rather than keeping all your work local?
-When I want to show my work to others, or when I colaborate with someone.
+When I want to show my work to others, or when I collaborate with someone.
 
+2. Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+It can happen that a change that is in the remote repository to conflict with
+the files in the working directory so it can be distracting trying to solve the
+conflicts in the middle of developing. Rather it would be easier to do that when
+you decide.
 
+3. Describe the differences between forks, clones, and branches. When would you
+use one instead of another?
+Branch is the simplest operation among fork and clone. It doesn't create a new
+repository, like the others. It creates a tag on the most recent checkout commit.
+And then the following commit is a children of the previous commit and the tag
+moves to the tip of the branch. It is useful when developing something new on a
+stable branch.
+Clone copies a repository from local to local or from remote to local. It is useful
+when you want to continue to work on an existing repository, but you don't have it
+on your local machine.
+Fork is a GitHub term for clone a remote repository into another remote location.
+It is used when you don't have the privilege to work an existing repository on
+GitHub, so you can create in your account a copy of it and then do whatever
+modifications you want. It is nice that you have the possibility to suggest to the
+owner of the repository to review the changes you did on a fork and maybe update the
+upstream.
+
+4. What is the benefit of having a copy of the last known state of the remote stored locally?
+I can see what other changes have been made and if I can easily merge the remote with
+the local.
+
+5. How would you collaborate without using Git or GitHub? What would be easier,
+and what would be harder?
+I was using before SVN. I had several tools for viewing the changeset and doing the
+regressions. I used Bugzilla for communicating the issues and updating the status.
+But all of these had to be done by each from the team. Using Git and Github, you
+are enforced to follow a process, which is good. It's easy and I like it very much.
+
+6. When would you want to make changes in a separate branch rather than directly in
+master? What benefits does each approach have?
+The master branch has to remain stable. I think we can make directly changes to
+master when there is no impact on different areas of the project (ex: comments,
+a small change on an independent feature etc.). Otherwise the effort of using a separate
+branch is worth it.
